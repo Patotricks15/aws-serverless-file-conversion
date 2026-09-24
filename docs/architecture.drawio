@@ -1,0 +1,61 @@
+<mxfile host="Drawpyo" modified="2026-09-24T15:25:49" agent="Python 3.12, Drawpyo 0.23" version="21.6.5" type="device">
+  <diagram name="Page-1" id="123933075750112">
+    <mxGraphModel dx="2037" dy="830" grid="1" gridSize="10" guides="1" toolTips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="123933075946528" value="File Upload&#xa;Bucket (S3)" style="whiteSpace=wrap;rounded=0;fillColor=#7AA116;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bucket;" vertex="1" parent="1">
+  <mxGeometry x="40" y="120" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933076654944" value="File Upload&#xa;Notification (SNS)" style="whiteSpace=wrap;rounded=0;fillColor=#E7157B;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sns;" vertex="1" parent="1">
+  <mxGeometry x="200" y="120" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933074018560" value="Sentiments&#xa;Queue (SQS)" style="whiteSpace=wrap;rounded=0;fillColor=#E7157B;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sqs;" vertex="1" parent="1">
+  <mxGeometry x="360" y="40" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933074019424" value="Sentiment Analysis&#xa;(Lambda)" style="whiteSpace=wrap;rounded=0;fillColor=#ED7100;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda_function;" vertex="1" parent="1">
+  <mxGeometry x="520" y="40" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933074020288" value="Comprehend" style="whiteSpace=wrap;rounded=0;fillColor=#01A88D;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.comprehend;" vertex="1" parent="1">
+  <mxGeometry x="520" y="-60" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933074021152" value="Sentiments Records&#xa;(DynamoDB)" style="whiteSpace=wrap;rounded=0;fillColor=#C925D1;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="1">
+  <mxGeometry x="680" y="40" width="64" height="80" as="geometry" />
+</mxCell>
+        <mxCell id="123933074022016" value="Conversion&#xa;Queue (SQS)" style="whiteSpace=wrap;rounded=0;fillColor=#E7157B;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.sqs;" vertex="1" parent="1">
+  <mxGeometry x="360" y="220" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933074022832" value="Conversion Service&#xa;(Lambda)" style="whiteSpace=wrap;rounded=0;fillColor=#ED7100;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda_function;" vertex="1" parent="1">
+  <mxGeometry x="520" y="220" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933074023696" value="Converted File&#xa;Storage (S3)" style="whiteSpace=wrap;rounded=0;fillColor=#7AA116;strokeColor=none;sketch=0;dashed=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;pointerEvents=1;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.bucket;" vertex="1" parent="1">
+  <mxGeometry x="680" y="220" width="64" height="64" as="geometry" />
+</mxCell>
+        <mxCell id="123933074024560" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933075946528" target="123933076654944">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="123933074024512" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933076654944" target="123933074018560">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="123933074024608" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933076654944" target="123933074022016">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="123933074025472" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933074018560" target="123933074019424">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="123933074025616" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933074019424" target="123933074020288" value="detect_sentiment">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="123933074025760" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933074019424" target="123933074021152" value="put_item">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="123933074025904" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933074022016" target="123933074022832">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+        <mxCell id="123933074026048" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;rounded=0;jettySize=auto;startArrow=none;endArrow=block;endFill=0;strokeColor=#545B64;" edge="1" parent="1" source="123933074022832" target="123933074023696" value="markdown to HTML">
+  <mxGeometry relative="1" as="geometry" />
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
